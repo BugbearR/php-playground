@@ -1,0 +1,25 @@
+{
+  "name": "php-playground",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "workspace",
+  "forwardPorts": [8080, 8443],
+  "workspaceFolder": "/php-playground",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "EditorConfig.EditorConfig",
+        "shardulm94.trailing-spaces",
+        "xdebug.php-pack"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/php:1": {
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+    }
+  }
+}
